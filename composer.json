@@ -1,0 +1,26 @@
+{
+    "name": "eidsonator/web-log-viewer-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony Web Log Viewer Bundle",
+    "keywords": ["log viewer"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Todd Eidson",
+            "email": "todd@eidson.info"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "^3.3",
+        "twig/twig": "^2.4",
+        "jdorn/sql-formatter": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "FOS\\UserBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    }
+}
