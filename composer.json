@@ -14,7 +14,7 @@
         "symfony/framework-bundle": "^3.3",
         "twig/twig": "^2.4",
         "jdorn/sql-formatter": "^1.2",
-        "sensio/framework-extra-bundle": "^5.0"
+        "sensio/framework-extra-bundle": "^3.0.2"
     },
     "autoload": {
         "psr-4": {
