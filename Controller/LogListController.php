@@ -8,8 +8,8 @@ use Symfony\Component\HttpFoundation\Request;
 
 class LogListController extends Controller
 {
-    public function listAction()
+    public function listAction(Request $request)
     {
-
+        $this->render('@WebLogViewer/listView.html.twig');
     }
 }
