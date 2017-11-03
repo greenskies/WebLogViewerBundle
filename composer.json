@@ -16,6 +16,10 @@
         "jdorn/sql-formatter": "^1.2",
         "sensio/framework-extra-bundle": "^3.0.2"
     },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "symfony/phpunit-bridge": "^3.0"
+    },
     "autoload": {
         "psr-4": {
             "Eidsonator\\WebLogViewerBundle\\": ""
