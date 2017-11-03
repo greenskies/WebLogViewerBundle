@@ -13,11 +13,12 @@
     "require": {
         "symfony/framework-bundle": "^3.3",
         "twig/twig": "^2.4",
-        "jdorn/sql-formatter": "^1.2"
+        "jdorn/sql-formatter": "^1.2",
+        "sensio/framework-extra-bundle": "^5.0"
     },
     "autoload": {
         "psr-4": {
-            "FOS\\UserBundle\\": ""
+            "Eidsonator\\WebLogViewerBundle\\": ""
         },
         "exclude-from-classmap": [
             "/Tests/"
