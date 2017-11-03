@@ -1,0 +1,104 @@
+<style>
+    .debug {
+        background-color: rgba(20, 80, 80, .05);
+    }
+    .notice{
+        background-color: rgba(120, 40, 0, .1);
+    }
+    .error {
+        background-color: rgba(200, 50, 10, .2);
+    }
+    .critical {
+        background-color: rgba(200, 0, 0, .3);
+        color: white;
+    }
+    .alert {
+        background-color: rgba(200, 0, 0, .5);
+        color: white;
+    }
+    .emergency {
+        background-color: rgba(200, 0, 0, .7);
+        color: white;
+    }
+</style>
+
+<div class="container-fluid">
+    <div class="row">
+        {% if noLog is defined %}
+            <div class="alert alert-info">
+                No Log has been generated for today!<br>
+            </div>
+        {% else %}
+            <div class="col-xs-1">
+                <a href="{{ url('eidsonator_weblogviewer_loglist_loglist') }}">Back to logs</a>
+                <br>
+                <div class="form">
+                    <label>
+                        <input type="checkbox" checked onclick="$('.debug').toggle()">
+                        debug
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked onclick="$('.info').toggle()">
+                        info
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked onclick="$('.notice').toggle()">
+                        notice
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked onclick="$('.warning').toggle()">
+                        warning
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked onclick="$('.error').toggle()">
+                        error
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked onclick="$('.critical').toggle()">
+                        critical
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked onclick="$('.alert').toggle()">
+                        alert
+                    </label>
+                    <br>
+                    <label>
+                        <input type="checkbox" checked onclick="$('.emergency').toggle()">
+                        emergency
+                    </label>
+                    <br>
+                </div>
+            </div>
+            <div class="col-xs-11">
+                <table class="table table-bordered">
+                    {% for line in log %}
+                        <tr class="{{ line.level }}">
+                            <td>
+                                {{ line.dateTime }}
+                            </td>
+                            <td>
+                                {{ line.type }}
+                            </td>
+                            <td>
+                                {{ line.level }}
+                            </td>
+                            <td>
+                                {{ line.message|raw }}
+                                {% if line.json %}
+                                    <br>
+                                    {{ line.json|raw }}
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        {% endif %}
+    </div>
+</div>
