@@ -1,0 +1,16 @@
+<table class="table table-bordered">
+    {% for log in logs %}
+        <tr>
+            <td>
+                <a href="{{ url('log_viewer') }}?log={{ log }}">
+                    {{ log }}
+                </a>
+            </td>
+            <td>
+                <a href="{{ url('log_viewer') }}?log={{ log }}&delete=true">
+                    delete
+                </a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
