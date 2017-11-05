@@ -17,7 +17,7 @@ class LogListController extends Controller
         $kernel = $this->container->get('kernel');
         $logDir = $kernel->getLogDir();
         $logs = (new LogList())->getLogList($logDir);
-        $this->render('@WebLogViewer/listView.html.twig', [
+        return $this->render('@WebLogViewer/listView.html.twig', [
             'logs' => $logs
         ]);
     }
