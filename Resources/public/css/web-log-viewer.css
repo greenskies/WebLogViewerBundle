@@ -1,0 +1,35 @@
+.debug {
+    background-color: rgba(20, 80, 80, .05);
+}
+.notice{
+    background-color: rgba(120, 40, 0, .1);
+}
+.error {
+    background-color: rgba(200, 50, 10, .2);
+}
+.critical {
+    background-color: rgba(200, 0, 0, .3);
+    color: white;
+}
+.alert {
+    background-color: rgba(200, 0, 0, .5);
+    color: white;
+}
+.emergency {
+    background-color: rgba(200, 0, 0, .7);
+    color: white;
+}
+
+.side-bar {
+    float: left;
+    width: 10%;
+}
+
+.content{
+    width: 90%
+}
+
+
+tr{
+    display: table-row;
+}

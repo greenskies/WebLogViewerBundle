@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Request;
 class LogViewerController extends Controller
 {
     /**
-     * @Route("log_viewer", name="log_viewer")
+     * @Route("logs/viewer", name="log_viewer")
      * @param Request $request
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -33,6 +33,6 @@ class LogViewerController extends Controller
         } else {
             $context['noLog'] = true;
         }
-        return $this->render('@WebLogViewer/logView.html.twig');
+        return $this->render('@WebLogViewer/logView.html.twig', $context);
     }
 }

@@ -63,6 +63,9 @@ class LogView
     {
         // original code: http://www.daveperrett.com/articles/2008/03/11/format-json-with-php/
         if (!is_string($json)) {
+            if (phpversion() && phpversion() >= 5.4) {
+                return json_encode($json, JSON_PRETTY_PRINT);
+            }
             $json = json_encode($json);
         }
         $result      = '';
