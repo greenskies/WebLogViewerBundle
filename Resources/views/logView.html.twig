@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ asset('bundles/weblogviewer/css/web-log-viewer.css') }}">
+<link rel="stylesheet" href="{{ asset('bundles/weblogviewer/vendor/highlight/styles/darcula.css') }}">
 
 <div class="container-fluid">
     <div class="row">
@@ -70,7 +71,12 @@
                                 {{ line.message|raw }}
                                 {% if line.json %}
                                     <br>
-                                    {{ line.json|raw }}
+                                    <pre>
+                                        <code class="json">
+                                            {{ line.json|raw }}
+                                        </code>
+                                    </pre>
+
                                 {% endif %}
                             </td>
                         </tr>
@@ -82,3 +88,5 @@
 </div>
 
 <script src="{{ asset('bundles/weblogviewer/js/web-log-viewer.js') }}"></script>
+<script src="{{ asset('bundles/weblogviewer/vendor/highlight/highlight.pack.js') }}"></script>
+<script>hljs.initHighlightingOnLoad();</script>
