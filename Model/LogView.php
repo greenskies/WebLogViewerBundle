@@ -18,7 +18,7 @@ class LogView
         foreach ($lines as $line) {
             // borrowed parsing from here, might be able to borrow more!
             // https://gist.github.com/chriskonnertz/46423c15a38badf3133fda391448667e
-            $dateTime = substr($line, 0, $dateLength);
+            $dateTime = trim(substr($line, 0, $dateLength));
             $line = substr($line, $dateLength);
             $pos = strpos($line, ':');
             $type = substr($line, 0, $pos);

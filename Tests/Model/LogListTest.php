@@ -19,7 +19,7 @@ class LogListTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         $this->logList = new LogList();
-        $this->logArray = $this->logList->getLogList('../Fixtures/LogList/');
+        $this->logArray = $this->logList->getLogList('Tests/Fixtures/LogList/');
     }
 
     public function testGetLogList()

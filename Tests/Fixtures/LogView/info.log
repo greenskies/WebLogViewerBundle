@@ -1,0 +1,1 @@
+[2017-11-05 08:40:11] request.INFO: Matched route "log_viewer". {"route":"log_viewer","route_parameters":{"_controller":"Eidsonator\\WebLogViewerBundle\\Controller\\LogViewerController::logViewAction","_route":"log_viewer"},"request_uri":"http://127.0.0.1:8000/logs/viewer?log=dev-2017-11-04.log","method":"GET"} []
