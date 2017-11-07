@@ -1,0 +1,6 @@
+version: 2
+jobs:
+  build:
+    machine:
+      php:
+        version: 7.0.13
