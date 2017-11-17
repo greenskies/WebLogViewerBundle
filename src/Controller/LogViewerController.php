@@ -1,8 +1,8 @@
 <?php
 
-namespace Eidsonator\WebLogViewerBundle\Controller;
+namespace Greenskies\WebLogViewerBundle\Controller;
 
-use Eidsonator\WebLogViewerBundle\Model\LogView;
+use Greenskies\WebLogViewerBundle\Model\LogView;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -24,7 +24,7 @@ class LogViewerController extends Controller
 
         if($delete) {
             unlink($logfile);
-            return $this->redirectToRoute('eidsonator_weblogviewer_loglist_loglist');
+            return $this->redirectToRoute('Greenskies_weblogviewer_loglist_loglist');
         }
 
         if (file_exists($logfile)) {

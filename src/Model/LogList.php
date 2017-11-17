@@ -1,6 +1,6 @@
 <?php
 
-namespace Eidsonator\WebLogViewerBundle\Model;
+namespace Greenskies\WebLogViewerBundle\Model;
 
 
 class LogList

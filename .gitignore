@@ -1,1 +1,7 @@
-./vendor/
+vendor/
+
+composer\.lock
+
+bin/
+
+build/logs/

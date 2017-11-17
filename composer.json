@@ -17,15 +17,19 @@
         "sensio/framework-extra-bundle": "^3.0.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7",
-        "symfony/phpunit-bridge": "^3.0"
+        "phpunit/phpunit": "^6.4",
+        "satooshi/php-coveralls": "^1.0"
     },
     "autoload": {
         "psr-4": {
-            "Eidsonator\\WebLogViewerBundle\\": ""
+            "Greenskies\\WebLogViewerBundle\\": "src"
         },
         "exclude-from-classmap": [
             "/Tests/"
         ]
+    },
+    "config": {
+        "sort-packages": true,
+        "bin-dir": "bin"
     }
 }

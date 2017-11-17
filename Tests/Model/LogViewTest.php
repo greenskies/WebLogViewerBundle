@@ -6,11 +6,11 @@
  * Time: 7:18 AM
  */
 
-namespace Eidsonator\WebLogViewerBundle\Tests\Model;
+namespace Greenskies\WebLogViewerBundle\Tests\Model;
 
-use Eidsonator\WebLogViewerBundle\Model\LogView;
+use Greenskies\WebLogViewerBundle\Model\LogView;
 
-class LogViewTest extends \PHPUnit_Framework_TestCase
+class LogViewTest extends \PHPUnit\Framework\TestCase
 {
     public function testDateTime()
     {

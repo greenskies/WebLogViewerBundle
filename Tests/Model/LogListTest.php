@@ -6,11 +6,11 @@
  * Time: 7:17 AM
  */
 
-namespace Eidsonator\WebLogViewerBundle\Tests\Model;
+namespace Greenskies\WebLogViewerBundle\Tests\Model;
 
-use Eidsonator\WebLogViewerBundle\Model\LogList;
+use Greenskies\WebLogViewerBundle\Model\LogList;
 
-class LogListTest extends \PHPUnit_Framework_TestCase
+class LogListTest extends \PHPUnit\Framework\TestCase
 {
 
     private $logList;

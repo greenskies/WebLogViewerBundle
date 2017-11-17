@@ -1,6 +1,6 @@
 <?php
 
-namespace Eidsonator\WebLogViewerBundle;
+namespace Greenskies\WebLogViewerBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

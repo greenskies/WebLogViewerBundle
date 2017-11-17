@@ -6,7 +6,7 @@
  * Time: 8:59 PM
  */
 
-namespace Eidsonator\WebLogViewerBundle\Model;
+namespace Greenskies\WebLogViewerBundle\Model;
 
 class LogView
 {

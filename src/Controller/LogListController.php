@@ -1,8 +1,8 @@
 <?php
 
-namespace Eidsonator\WebLogViewerBundle\Controller;
+namespace Greenskies\WebLogViewerBundle\Controller;
 
-use Eidsonator\WebLogViewerBundle\Model\LogList;
+use Greenskies\WebLogViewerBundle\Model\LogList;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
