@@ -1,5 +1,5 @@
 {
-    "name": "eidsonator/web-log-viewer-bundle",
+    "name": "greenskies/web-log-viewer-bundle",
     "type": "symfony-bundle",
     "description": "Symfony Web Log Viewer Bundle",
     "keywords": ["log viewer"],
