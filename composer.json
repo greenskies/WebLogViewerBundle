@@ -11,10 +11,11 @@
         }
     ],
     "require": {
-        "symfony/framework-bundle": "^3.3",
-        "twig/twig": "^2.4",
+        "greenskies/collection": "^0.0.2",
         "jdorn/sql-formatter": "^1.2",
-        "sensio/framework-extra-bundle": "^3.0.2"
+        "sensio/framework-extra-bundle": "^3.0.2",
+        "symfony/framework-bundle": "^3.3",
+        "twig/twig": "^2.4"
     },
     "require-dev": {
         "phpunit/phpunit": "^6.4",
