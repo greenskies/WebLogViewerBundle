@@ -37,7 +37,7 @@ class LineView
             $this->json = static::json2Html($json) ;
         } else {
             $this->message = str_replace(' [] []', '', $line);
-            if ($type === 'propel.INFO') {
+            if ($this->type === 'propel.INFO') {
                 $this->message = \SqlFormatter::format($message);
             }
             $this->json = false;
