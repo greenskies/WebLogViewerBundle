@@ -24,10 +24,9 @@ class LineView
         $this->dateTime = trim(substr($line, 0, $dateLength));
         $line = substr($line, $dateLength);
         $pos = strpos($line, ':');
-        $this->type = substr($line, 0, $pos);
-        $line = substr($line, $pos + 1);
-        $pos = strpos($this->type, '.');
         $this->level = strtolower(substr($this->type, $pos + 1));
+        list($this->type, $this->level) = explode('.', substr($line, 0, $pos));
+        $line = substr($line, $pos + 1);
         $jsonStart = strpos($line,'{');
         if ($jsonStart > 0) {
             $this->message = substr($line, 0, $jsonStart);
@@ -37,8 +36,8 @@ class LineView
             $this->json = static::json2Html($json) ;
         } else {
             $this->message = str_replace(' [] []', '', $line);
-            if ($this->type === 'propel.INFO') {
-                $this->message = \SqlFormatter::format($message);
+            if ($this->type === 'propel' || $this->type === "doctrine") {
+                $this->message = \SqlFormatter::format($this->message);
             }
             $this->json = false;
         }
