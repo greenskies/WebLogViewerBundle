@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: todd
- * Date: 03/11/17
- * Time: 7:17 AM
- */
 
 namespace Greenskies\WebLogViewerBundle\Tests\Model;
 
