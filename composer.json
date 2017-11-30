@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "greenskies/collection": "^0.0.2",
+        "greenskies/collection": "^0.0.3",
         "jdorn/sql-formatter": "^1.2",
         "sensio/framework-extra-bundle": "^3.0.2",
         "symfony/framework-bundle": "^3.3",
