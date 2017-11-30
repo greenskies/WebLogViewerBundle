@@ -13,8 +13,8 @@
     "require": {
         "greenskies/collection": "^0.0.3",
         "jdorn/sql-formatter": "^1.2",
-        "sensio/framework-extra-bundle": "^3.0.2",
-        "symfony/framework-bundle": "^3.3",
+        "sensio/framework-extra-bundle": "^3.0.2||^5.0",
+        "symfony/framework-bundle": "^3.3||^4.0",
         "twig/twig": "^2.4"
     },
     "require-dev": {
