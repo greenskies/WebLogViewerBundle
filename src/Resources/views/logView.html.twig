@@ -56,6 +56,12 @@
             </div>
             <div class="content">
                 <table class="table table-bordered">
+                    <tr>
+                        <th width="10%">DateTime</th>
+                        <th width="10%">Channel</th>
+                        <th width="10%">Level</th>
+                        <th>Message</th>
+                    </tr>
                     {% for line in log %}
                         <tr class="{{ line.level }}">
                             <td>
