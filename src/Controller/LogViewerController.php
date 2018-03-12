@@ -22,6 +22,15 @@ class LogViewerController extends Controller
         $logDir = $this->container->get('kernel')->getLogDir();
         $logfile = "$logDir/$log";
 
+        // Check that the requested file is within the log directory:
+        // we probe one character ahead to make sure we validate the full directory name
+        // and not just directories that starts with the same substring
+        $canonicalLogDir = realpath($logDir);
+        $canonicalLogFile = realpath($logfile);
+        if(substr($canonicalLogFile, 0, strlen($canonicalLogDir)+1) !== $canonicalLogDir.'/'){
+            throw $this->createAccessDeniedException();
+        }
+
         if($delete) {
             unlink($logfile);
             return $this->redirectToRoute('Greenskies_weblogviewer_loglist_loglist');
