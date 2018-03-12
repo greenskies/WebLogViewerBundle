@@ -33,7 +33,7 @@ class LogViewerController extends Controller
 
         if($delete) {
             unlink($logfile);
-            return $this->redirectToRoute('Greenskies_weblogviewer_loglist_loglist');
+            return $this->redirectToRoute('greenskies_weblogviewer_loglist_loglist');
         }
 
         if (file_exists($logfile)) {
