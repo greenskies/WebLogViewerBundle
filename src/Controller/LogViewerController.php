@@ -27,7 +27,7 @@ class LogViewerController extends Controller
         // and not just directories that starts with the same substring
         $canonicalLogDir = realpath($logDir);
         $canonicalLogFile = realpath($logfile);
-        if(substr($canonicalLogFile, 0, strlen($canonicalLogDir)+1) !== $canonicalLogDir.'/'){
+        if(substr($canonicalLogFile, 0, strlen($canonicalLogDir)+1) !== $canonicalLogDir.DIRECTORY_SEPARATOR){
             throw $this->createAccessDeniedException();
         }
 
