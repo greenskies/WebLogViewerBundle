@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ asset('bundles/weblogviewer/css/web-log-viewer.css') }}">
+<br>
 <link rel="stylesheet" href="{{ asset('bundles/weblogviewer/vendor/highlight/styles/darcula.css') }}">
 
 <div class="container-fluid">
@@ -9,6 +10,7 @@
             </div>
         {% else %}
             <div class="side-bar">
+                <a href="/">Home</a>
                 <a href="{{ url('greenskies_weblogviewer_loglist_loglist') }}">Back to logs</a>
                 <br>
                 <div class="form">
